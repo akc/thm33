@@ -1,0 +1,17 @@
+name:                thm33
+version:             0.1.0
+synopsis:            CLI to Theorem 3.3 of Guibas and Odlyzko - String overlaps ...
+homepage:            https://github.com/akc/thm33
+license:             BSD3
+license-file:        LICENSE
+author:              Anders Claesson
+maintainer:          anders.claesson@gmail.com
+category:            Math
+build-type:          Simple
+extra-source-files:  ChangeLog.md
+cabal-version:       >=1.10
+
+executable thm33
+  main-is:             thm33.hs
+  build-depends:       base >=4.9 && <4.10
+  default-language:    Haskell2010
