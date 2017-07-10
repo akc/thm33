@@ -112,8 +112,8 @@ instance Eq a => Render (Prg a) where
         ]
 
 instance Render Preamble where
-    render Sage  = const $ unlines ["x = var('x')"]
-    render SymPy = const $ unlines ["from sympy import *", "x = Symbol('x')"]
+    render Sage  = const $ intercalate "\n" ["x = var('x')"]
+    render SymPy = const $ intercalate "\n" ["from sympy import *", "x = Symbol('x')"]
 
 instance Render Solve where
     render Sage = const $ unlines
