@@ -1,4 +1,5 @@
 dist/
+result
 thm33
 *.hi
 *.o
