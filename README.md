@@ -11,7 +11,7 @@ are the patterns/factors to be avoided
 ## Example
 
 Calling `thm33 abc cba aa` results in SymPy code for counting words over
-the alphabet `{a,b,c}` avoiding `cba` and `aa` as a factors:
+the alphabet `{a,b,c}` avoiding `cba` and `aa` as factors:
 
 ```
 $ thm33 abc cba aa
@@ -30,7 +30,7 @@ print(series(F,n=10))
 ```
 
 Executing this script, e.g. by piping through `python3`, we find the
-(rational) generating function and the first few terms of it's Taylor
+rational generating function and the first few terms of its Taylor
 series:
 ```
 $ thm33 abc cba aa | python3 -
